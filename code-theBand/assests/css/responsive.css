@@ -1,0 +1,51 @@
+/* responsive with Pc */
+@media (min-width: 1024px) {
+  #header .icon-menu {
+    display: none;
+  }
+}
+/* Responsive with Ipad*/
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* #container {
+    overflow: hidden;
+  } */
+  #header .icon-menu {
+    display: none;
+    padding: 14px 24px;
+    margin-right: 0px;
+  }
+}
+/* responsive with mobile */
+@media (max-width: 739px) {
+  .nav {
+    display: block;
+  }
+  .nav li {
+    display: block;
+    width: 100%;
+  }
+  .nav li:first-child {
+    display: inline-block;
+  }
+  #header {
+    overflow: hidden;
+  }
+  #header .icon-search {
+    display: none;
+  }
+
+  #header .nav li:first-child {
+    display: inline-block;
+  }
+
+  body,
+  html {
+    width: 960px;
+  }
+  .list-member .member {
+    width: 100%;
+  }
+  .list-member .member .img-member {
+    width: 60%;
+  }
+}

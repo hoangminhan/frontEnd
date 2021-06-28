@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100%;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding: 0 8px;
+}
+.col-full {
+  width: 100%;
+}
+.col-half {
+  width: 50%;
+}
+.col-third {
+  width: 33.333%;
+}
+.text-white {
+  color: #fff !important;
+}
+
+#container {
+}
+#header {
+  position: fixed;
+  height: 46px;
+  background-color: #000;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  /* position: absolute; */
+}
+
+.nav {
+  display: inline-block;
+}
+/* .nav::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+.nav > li {
+  display: inline-block;
+  line-height: 46px;
+  list-style-type: none;
+}
+.nav > li > a {
+  text-transform: uppercase;
+  color: #fff;
+}
+.nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 0 24px;
+  position: relative;
+}
+.nav > li:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+.nav .sub-nav {
+  position: absolute;
+  background-color: #ccc;
+  width: 150px;
+  display: none;
+}
+.sub-nav li {
+  list-style-type: none;
+}
+.sub-nav li a {
+  color: #000;
+  padding: 0 16px;
+}
+.sub-nav > li:hover > a {
+  background-color: #ccc;
+}
+.nav li:hover .sub-nav {
+  display: block;
+}
+#header .icon-menu,
+#header .icon-search {
+  float: right;
+  line-height: 46px;
+  padding: 0 24px;
+  /* padding: 12px 24px; */
+  color: #fff;
+}
+#header .icon-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#header .icon-menu:hover {
+  color: #000;
+  background-color: #ccc;
+}
+#header .icon-search:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#slider {
+  margin-top: 46px;
+  padding-top: 50%;
+  width: 100%;
+  background: url("../img/chicago.jpg") top center/cover no-repeat;
+}
+#slider .content-slider {
+  padding: 32px 16px;
+  color: #fff;
+  font-size: 15px;
+}
+/* #slider::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+#slider .title {
+  text-align: center;
+  margin: 10px 0;
+}
+#slider .slogan {
+  text-align: center;
+  margin: 10px 0;
+  text-shadow: 0 0 1px #000;
+}
+#content {
+}
+#content .content-header {
+  padding: 64px 16px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .title-content {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+#content .slogan-content {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+#content .content-description {
+  text-align: justify;
+  line-height: 1.4rem;
+  font-size: 15px;
+  margin: 15px 0;
+}
+.list-member .member {
+  text-align: center;
+}
+.list-member .name-member {
+  text-align: center;
+  font-size: 15px;
+  margin: 15px 0;
+}
+.list-member .img-member {
+  width: 154px;
+}
+.container-tours {
+  background-color: #000;
+}
+.content-header .date-tours {
+  background-color: #fff;
+}
+.date-tours li {
+  padding: 8px 16px;
+  list-style-type: none;
+  border-bottom: solid 1px #ccc;
+
+  font-size: 15px;
+}
+.date-tours .sold-out {
+  padding: 0 8px;
+  color: #fff;
+  background-color: red;
+}
+
+.date-tours .quanlity {
+  float: right;
+  padding: 0 8px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+}
+.place-tours {
+  padding: 32px 0;
+}
+.place-tours .img-place {
+  display: block;
+  width: 245px;
+}
+.place-tours .body-place {
+  background-color: #fff;
+  padding: 15px 16px;
+  font-size: 15px;
+  width: 245px;
+}
+
+.body-place .place-title {
+  margin: 15px 0;
+  font-size: 15px;
+}
+.body-place .place-description {
+  margin: 15px 0;
+}
+.body-place .place-date {
+  opacity: 0.6;
+}
+.body-place .btn-buy {
+  border: none;
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+}
+.body-place .btn-buy:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.list-contact li {
+  list-style: none;
+  padding: 5px;
+}
+.list-contact li i {
+  margin-right: 10px;
+}
+.content-input {
+  width: 100%;
+  padding: 8px;
+}
+.input-message {
+  margin-top: 10px;
+}
+.content-contact .btn-send {
+  float: right;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.content-contact .btn-send:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+#content .map {
+  padding-top: 50%;
+  background: url("../img/map.jpg");
+}
+#footer {
+  background-color: #ccc;
+  padding: 30px 0;
+  text-align: center;
+}
+#footer .footer-content {
+}
